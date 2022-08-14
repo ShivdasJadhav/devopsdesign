@@ -18,9 +18,9 @@ const Main = () => {
   };
   return (
     <section id='hero' className="mb-40">
-      <div className="px-6 py-12 md:px-12 bg-gray-100 text-gray-800 text-center lg:text-left">
+      <div className="px-6 md:px-12 bg-gray-100 text-gray-800 text-center lg:text-left">
         <div className="container mx-auto xl:px-32">
-          <div className="grid lg:grid-cols-2 gap-12 flex items-center">
+          <div className="grid lg:grid-cols-2 mb-20 gap-12 flex h-screen items-center">
             <div className="mt-12 lg:mt-0">
               <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
                 The best offer <br />
