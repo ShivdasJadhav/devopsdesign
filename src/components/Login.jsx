@@ -2,6 +2,7 @@ import React from "react";
 import "./Login.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import {Navigate} from "react-router-dom";
 import * as yup from "yup";
 const loginSchema = yup.object().shape({
   email: yup.string().email().required(),
@@ -17,22 +18,23 @@ function Login() {
   });
 
  async function submitLoginForm(e) {
-    const { email, password } = e;
-    // e.preventDefault();
+    // const { email, password } = e;
+    // // e.preventDefault();
     
-      const response = await fetch("http://localhost:3000/api/auth", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      if (!response.ok) {
-        throw new Error(`Error! status: ${response.status}`);
-      }
-      const data = await response.json();
-      console.log(data);
+    //   const response = await fetch("http://localhost:3000/api/auth", {
+    //     method: "GET",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //   });
+    //   if (!response.ok) {
+    //     throw new Error(`Error! status: ${response.status}`);
+    //   }
+    //   const data = await response.json();
+    //   console.log(data);
     
-    response();
+    // response();
+    alert("Invalid Credentioals!");
   }
 
   

@@ -45,46 +45,47 @@ function Register() {
     resolver: yupResolver(registerSchema),
   });
   async function submitData(e){
-      const {
-        firstName,
-        lastName,
-        email,
-        company,
-        userName,
-        password,
-        confirmPass,
-        address,
-        phoneNo,
-        panCardNo,
-        gstNo,
-      } = userData;
-      const res = await fetch(
-        "https://erptesting-eac3f-default-rtdb.asia-southeast1.firebasedatabase.app/registrationData.json",
-        {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify({
-            fname: firstName,
-            lname: lastName,
-            email: email,
-            company: company,
-            userId: userName,
-            pass: password,
-            address: address,
-            phone: phoneNo,
-            pan: panCardNo,
-            gst: gstNo,
-          }),
-        }
-      ).then(()=>{return "s"}).catch(()=>{return "f"});
-    if(res==="s"){
-      alert("registration Successfull");
-    }else{
-      alert("failed")
-    }
-  };
+  //     const {
+  //       firstName,
+  //       lastName,
+  //       email,
+  //       company,
+  //       userName,
+  //       password,
+  //       confirmPass,
+  //       address,
+  //       phoneNo,
+  //       panCardNo,
+  //       gstNo,
+  //     } = userData;
+  //     const res = await fetch(
+  //       "https://erptesting-eac3f-default-rtdb.asia-southeast1.firebasedatabase.app/registrationData.json",
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "content-type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           fname: firstName,
+  //           lname: lastName,
+  //           email: email,
+  //           company: company,
+  //           userId: userName,
+  //           pass: password,
+  //           address: address,
+  //           phone: phoneNo,
+  //           pan: panCardNo,
+  //           gst: gstNo,
+  //         }),
+  //       }
+  //     ).then(()=>{return "s"}).catch(()=>{return "f"});
+  //   if(res==="s"){
+  //     alert("registration Successfull");
+  //   }else{
+  //     alert("failed")
+  //   }
+  alert('Registered Succesfully')
+};
   return (
     <form method="POST" onSubmit={handleSubmit(submitData)}>
       <div id="registerForm" className="grid grid-cols-2 gap-4">

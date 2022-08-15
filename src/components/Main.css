@@ -21,6 +21,9 @@
     background-color: rgb(255, 255, 255);
 
 }
+#unclicked:hover{
+    text-decoration: underline;
+}
 .round-lg{
     border-radius: 0.5rem 0.5rem 0 0;
 }
