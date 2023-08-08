@@ -1,5 +1,5 @@
 import React from "react";
-import manIcon from "../imgs/manIcon.jpg";
+import manIcon from "../assets/imgs/manIcon.jpg";
 function Review() {
   return (
     <section
@@ -12,8 +12,8 @@ function Review() {
             Reviews
           </h1>
         </div>
-        <div className="flex flex-col md:flex-row gap-10 justify-center mx-auto p-6 -m-4">
-          <div className="md:w-5/12 w-full shadow-2xl bg-gray-400 mx-auto p-6">
+        <div className="flex flex-col md:flex-row overflow-x-auto gap-10 justify-center p-6 m-4">
+          <div className="review shadow-2xl bg-gray-400 p-6">
             <div className="flex">
               <img
                 alt="content"
@@ -36,7 +36,7 @@ function Review() {
               </p>
             </div>
           </div>
-          <div className="md:w-5/12 w-full shadow-2xl mx-auto text-center bg-gray-400 p-6">
+          <div className=" review shadow-2xl bg-gray-400 p-6">
             <div className="flex">
               <img
                 alt="content"

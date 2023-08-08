@@ -1,28 +1,66 @@
 import React from "react";
-import dev2 from '../imgs/devops2.png'
+import dev2 from "../assets/imgs/devops2.png";
 function Footer() {
   return (
-    <footer class="text-center bg-gray-800 p-10 lg:text-left w-full text-white">
+    <footer className="text-center bg-gray-800 p-10 lg:text-left w-full text-white">
       <div className="flex flex-col md:flex-row justify-center">
-        <div class="w-3/12 mx-auto md:my-auto">
-          <p class="md:ml-3 text-center md:text-left">
-            <a href="#!" class="text-white">
+        <div className="w-full md:w-3/12 mx-auto py-10">
+          <h6
+            className="
+              uppercase
+              font-semibold
+              mb-4
+              flex
+            "
+          >
+            Skills
+          </h6>
+          <p className="flex items-center md:ml-1 text-center md:text-left">
+          <svg fill="white" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3 mr-2" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            <a href="#!" className="text-white">
               HTML5/CSS3
             </a>
           </p>
-          <p class="md:ml-3 text-center md:text-left">
-            <a href="#!" class="text-white">
+          <p className="flex items-center md:ml-1 text-center md:text-left">
+            <svg fill="white" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3 mr-2" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            <a href="#!" className="text-white">
               Javascript
             </a>
           </p>
-          <p class="md:ml-3 text-center md:text-left">
-            <a href="#!" class="text-white">
+          <p className="flex items-center md:ml-1 text-center md:text-left">
+            <svg fill="white" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3 mr-2" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            <a href="#!" className="text-white">
               Reactjs
             </a>
           </p>
-          <p class="md:ml-3 text-center  md:text-left">
-            <a href="#!" class="text-white">
+          <p className="flex items-center md:ml-1 text-center  md:text-left">
+          <svg fill="white" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3 mr-2" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            <a href="#!" className="text-white">
               TailwindCss
+            </a>
+          </p>
+          <p className="flex items-center md:ml-1 text-center  md:text-left">
+          <svg fill="white" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3 mr-2" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            <a href="#!" className="text-white">
+              MERN stack
+            </a>
+          </p>
+          <p className="flex items-center md:ml-1 text-center  md:text-left">
+          <svg fill="white" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3 mr-2" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            <a href="#!" className="text-white">
+              PHP
             </a>
           </p>
         </div>
@@ -33,11 +71,11 @@ function Footer() {
             src={dev2}
           />
         </div>
-        <div class=" mx-auto md:w-3/12 py-10 right-0 text-center md:text-right">
-          <div class=" md:text-right text-center mx-auto ">
-            <div class="w-fit">
+        <div className=" mx-auto md:w-3/12 py-10 right-0 text-center md:text-right">
+          <div className=" md:text-right text-center mx-auto ">
+            <div className="w-fit">
               <h6
-                class="
+                className="
               uppercase
               font-semibold
               mb-4
@@ -51,11 +89,12 @@ function Footer() {
                 Creater's for Developers
               </h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, omnis aliquid consectetur dignissimos <br /> dolorum
-                quam quaerat molestiae.
+                Creators are often a blend of artist and engineer, masterfully
+                combining technical prowess with an artistic flair. They
+                understand that aesthetics and user experience are just as
+                crucial as functionality, and their creations reflect an
+                unparalleled harmony between form and function.
               </p>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
             </div>
           </div>
         </div>
